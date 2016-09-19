@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<script src="language.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var langs = [ "nl", "fr", "de", "en" ];
+	var lang = getlang();
+	if ((lang != "") && (langs.indexOf(lang) >= 0)) {
+		document.location.href = "/" + lang + "/index.html"; 
+	}
+</script>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Belgif - Belgian Interoperability Framework</title>
+</head>
+<body>
+<header>
+<div id="logo-wrapper">
+	<a href="index.html">
+	<img id="logo" src="belgif.png" alt="Belgif logo"/>
+	</a>
+</div>
+<div id="lang-wrapper">
+<div id="languages">
+&nbsp;
+</div>
+</div>
+<div id="flag"></div>
+<div id="site-name">
+	<h1 class="site-name">Belgif</h1>
+	<h2 class="slogan">Belgian Interoperability Framework</h2>
+</div>
+</header>
+<main>
+	<div id="lang-select">
+	<section class="panel">
+	<h3><a href="/nl/index.html" onclick="setlang('nl');">Nederlands</a></h3>
+	</section>
+	<section class="panel">
+	<h3><a href="/fr/index.html" onclick="setlang('fr');">Français</a></h3>
+	</section>
+	<section class="panel">
+	<h3><a href="/de/index.html" onclick="setlang('de');">Deutsch</a></h3>
+	</section>
+	<section class="panel">
+	<h3><a href="/en/index.html" onclick="setlang('en');">English</a></h3>
+	</section>
+	</div>
+</main>
+<footer>
+	<a href="privacy.html">Privacy</a>
+	|
+	<a href="conditions.html">Conditions of use</a>
+	|
+	&copy; 2016 <a href="http://www.fedict.belgium.be">Fedict</a>
+</footer>
+</body>
+</html>
