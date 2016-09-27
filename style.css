@@ -40,11 +40,14 @@ div#languages {
 	height: 100%;
 	color: #282828;
 	background-color: #4c4a50;
+	display: flex;
+	justify-content: space-between;
 }	
 
 div#languages ul {
 	margin: 0;
 	padding: 0.5rem 1rem 0.5rem;
+	display: inline-block;
 }
 
 div#languages li {
@@ -152,4 +155,37 @@ h3 {
 div#joinup {
 	padding-top: 1rem;
 	text-align: center;
-} 
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: #dddddd 3px solid;
+}
+
+th, td {
+	text-align: left;
+	border: #dddddd 2px solid;
+	padding: 0.5rem;
+}
+
+td a {
+	text-decoration: underline;
+}
+
+th {
+ 	background-color: #566378;
+	color: white;
+	font-weight: normal;
+}
+
+details {
+	padding: 0.5rem;
+	border: #dddddd 1px solid;
+}
+
+details[open] summary {
+ 	background-color: #566378;
+	color: white;
+	font-weight: normal;
+
